@@ -1,6 +1,6 @@
 ; $Id$
 name = Copenhagen Mobile
-description = Alternator subtheme for K¿benhavns Biblioteker
+description = Alternator subtheme for Koebenhavns Biblioteker
 screenshot  = screenshot.png
 core = 6.x
 engine = phptemplate

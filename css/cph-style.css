@@ -1,0 +1,12 @@
+/* ----- / Change typography to match bibliotek.kk.dk ---- */
+body {
+  font-family: Verdana, Arial, sans-serif;
+  font-size:13px;
+}
+
+/* ----- / Basic layout ----- */
+.panel-region-separator {
+  height: 4px;
+  width: 100%;
+  background: #fff;
+}
