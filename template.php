@@ -3,8 +3,6 @@
  * Implementation of hook_preprocess_page.
  */ 
 function cph_mobile_preprocess_page(&$vars) {
-  print_r($vars);
-  
   // Don't display empty help from node_help().
   if ($vars['help'] == "<div class=\"help\"> \n</div>") {
     $vars['help'] = '';
@@ -47,7 +45,12 @@ function cph_mobile_user_login($form) {
  * h2 headline can be disabled on the block for current theme.
  */
 function cph_mobile_ting_search_form(&$form){
-  print_r($form);
+  // remove example text
   unset($form['example_text']);
+
+  // Change submit button from input[type=submit] to submit[type=image]
+  $form['submit']['#type'] = 'image_button';
+  $form['submit']['#attributes']['src'] = "/" . drupal_get_path('theme', 'cph_mobile') . "/images/button-search.png";
+  
   return drupal_render($form);
 }

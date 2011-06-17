@@ -1,36 +1,114 @@
 /* ----- / Change typography to match bibliotek.kk.dk ---- */
 body {
   font-family: Verdana, Arial, sans-serif;
-  font-size:13px;
+  font-size:12px;
 }
 
-/* ----- / Basic layout ----- */
+/* !----- / Basic styling ----- */
+img {
+  max-width: 100%;
+}
+
+h1, #ting-collection h1, .pane-title {
+  font-weight: bold;
+  font-size: 0.9em;
+  color: #222;
+}
+
+
+/* ----- / Header layout ----- */
 .panel-region-separator {
   height: 4px;
   width: 100%;
   background: #fff;
 }
 
-/* !----- / Basic styling ----- */
 .header {
-  background: #811224 url(../images/back-header.png) center top no-repeat;
+  background: #811224 url(../images/back-header-nologo.png) center top no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
   min-height: 123px;
 }
 
+.bottom {
+  overflow: hidden;
+}
+
+.header .login-btn {
+  position: static;
+  float: right;
+  margin-right: 7.1875%;
+}
+
+.site-logo {
+  width: 66%;
+  margin-left: 1em;
+  padding-top: 0.4em;
+  display: block;
+}
+
 .block-ting_search {
-  top: 68px;
-  margin: 0 114px 0 1em;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: auto;
+  margin: 37px 16.5625% 0 0;
 }
 
-#ting-search-form #edit-keys-wrapper {
-  margin: 0;
+#ting-search-form #edit-keys-wrapper { /* Override insanely specific selectors from layout.css */
+  padding-left: 1em;
+  margin: 0 62px 0 0;
 }
 
-#ting-search-form #edit-keys-wrapper input {
+#ting-search-form #edit-keys-wrapper input { /* Ditto */
   padding: 4px 2%;
   width: 96%;
+  float: left;
+  border-radius: 4px;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
 }
 
-.block-ting_search input[type=submit] {
-  margin: 0 -50px 0 0;
+#ting-search-form .form-submit { /* Ditto */
+  position: relative;
+}
+
+.block-ting_search input[type=image] {
+  margin: 1px 0 0 0;
+  float: right;
+}
+
+/* !----- / Menu styling ----- */
+
+.mobilemenu li a,
+.mobilemenu li.last a {
+  background: #333;
+}
+
+.mobilemenu {
+  border: none;
+}
+
+.top-menu {
+  padding: 0 0 2px;
+  background: #222 url(../images/menu-back-bottom.png) left bottom  repeat-x;
+}
+
+.top-menu li {
+  border: none;
+  margin: 0;
+}
+.top-menu li a,
+.top-menu li.last a {
+  background: url(../images/menu-back-item.png) left top repeat-x;
+  font-size: 0.9em;
+  line-height: 17px;
+}
+
+.top-menu li:nth-child(even) a {
+  margin: 0;
 }
