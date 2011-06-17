@@ -10,3 +10,27 @@ body {
   width: 100%;
   background: #fff;
 }
+
+/* !----- / Basic styling ----- */
+.header {
+  background: #811224 url(../images/back-header.png) center top no-repeat;
+  min-height: 123px;
+}
+
+.block-ting_search {
+  top: 68px;
+  margin: 0 114px 0 1em;
+}
+
+#ting-search-form #edit-keys-wrapper {
+  margin: 0;
+}
+
+#ting-search-form #edit-keys-wrapper input {
+  padding: 4px 2%;
+  width: 96%;
+}
+
+.block-ting_search input[type=submit] {
+  margin: 0 -50px 0 0;
+}
