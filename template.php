@@ -44,7 +44,7 @@ function cph_mobile_user_login($form) {
  * Theme function that can be used to remove stuff form the search form. The
  * h2 headline can be disabled on the block for current theme.
  */
-function cph_mobile_ting_search_form(&$form){
+function cph_mobile_ting_search_form($form){
   // remove example text
   unset($form['example_text']);
 
