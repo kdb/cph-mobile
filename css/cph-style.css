@@ -23,7 +23,7 @@ h1, #ting-collection h1, .pane-title {
   background: #fff;
 }
 
-.header {
+#page-header {
   background: #811224 url(../images/back-header-nologo.png) center top no-repeat;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -36,7 +36,7 @@ h1, #ting-collection h1, .pane-title {
   overflow: hidden;
 }
 
-.header .login-btn {
+#page-header .login-btn {
   position: static;
   float: right;
   margin-right: 7.1875%;
